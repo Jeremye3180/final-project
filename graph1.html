@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Python Graph Website</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+   
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="index.html">Python Graphing Tutorial</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="graph1.html">Scatter Plots</a></li>
+          <li><a href="graph2.html">Pie charts</a></li>
+      </div>
+    </div>
+  </nav>
+ 
+<h3>Making a Scatter Plot!</h3>
+
+
+<div class= 'container'>
+<h4>Importing matlib</h4>
+
+
+To start making a scatterplot in python, you must import matlib/pyplot
+with this line of code.
+
+<code>import matplotlib.pyplot as plt</code>
+
+<p>*plt means that each time we refer to pyplot, we can just use plt instead.</p>
+
+</div>
+
+<div class= 'container'>
+<h4>Defining the graph</h4>
+
+<p>Now we must set the x and y values on the graph. To do this, set x and y as two different variables equaled to an array
+
+
+After this, we need to plot the graph by telling pyplot to print x and y in the form of a scatterplot('ro')</p>
+
+<p>Like this:</p>  
+  <code>plt.plot(x,y,'ro')</code>
+  
+  <p>Now we have to define both the x and y axis. Do this by using plt.axis() and within the parameters, make four numbers seperated by commas. The first two numbers
+  represent the min and max of the x axis while the last two numbers represent the min and max of y values.</p>
+  </div>
+  
+  <div class= 'container'>
+  <h4>Labeling Your Graph</h4>
+  
+  <p>To label your axis, simply write<code>plt.xlabel('x axis title')</code> and <code>plt.ylabel('y axis title')</code>
+  For your title, similarly type <code>>plt.title('title name')</code></p>
+  
+  <p>Lastly, type <code>plt.show()</code></p>
+  
+  </div>
+  
+  <div class= 'container'>
+  <h3>Result Sample</h3>
+  
+  <img src= "scatg.png">
+  
+  </div>
+  </body>
+</html>
