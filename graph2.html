@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
   <meta charset="UTF-8">
   <title>Python Graph Website</title>
@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
+ 
 </head>
-
+ 
 <body>
-
+ 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -30,77 +30,77 @@
       </div>
     </div>
   </nav>
-
-
+ 
+ 
   <h3>Making a Pie chart</h3>
-
+ 
   <div class='container'>
     <h4>Importing matlib</h4>
-
-
+ 
+ 
     To start making a pie chart in python, you must import matlib/pyplot with this line of code.</h6>
-
+ 
     <code>import matplotlib.pyplot as plt</code>
-
+ 
   </div>
-
+ 
   <div class='container'>
     <h4>Inputting your data</h4>
-
+ 
     <p> To do this, make an array for your percents per portion of the pie with a comma in between every value. The more numbers you keep adding to this array, the more pieces there will be on the pie</p>
-
+ 
     </p> <code>sizes = [5, 28, 46, 21]</code>
-
+ 
   </div>
-
+ 
   <div class='container'>
     <h4>Label your portions</h4>
-
-    To label your portions, make a variable for labels and set it equal to the names of each proportion within single quotes and seperated by commas.
-
+ 
+    To label your portions, make a variable for labels and set it equal to the names of each proportion within single quotes and separated by commas.
+ 
     <code>labels = '9th', '11th', '12th', '10th'</code>
   </div>
   
   <div class= 'container'>
     <h4>Defining your figure</h4>
-
+ 
     <p>Since this is our first figure and axis, call figure as fig1 and axis as ax1. Then set both to equal plt.subplots()
     </p>
-
+ 
     <code>fig1, ax1 = plt.subplots()</code>
-
+ 
     <h4>Making the Pie</h4>
-
-    <p>Now you want to write ax1.pie(). Inside these parameters we define the apperance of the pie chart. First write the name of the variable used for the sizes of each proportion, then set your variable for the labels=labels. Lastly, type <code> autopct='%1.1f%%'</code>      which allows your proportion sizes to appear on top of each proportion.
+ 
+    <p>Now you want to write ax1.pie(). Inside these parameters we define the appearance of the pie chart. First write the name of the variable used for the sizes of each proportion, then set your variable for the labels=labels. Lastly, type <code> autopct='%1.1f%%'</code>      which allows your proportion sizes to appear on top of each proportion.
     </p>
-
+ 
     <code>ax1.pie(sizes, , labels=labels, autopct='%1.1f%%')
 </code>
-
+ 
     </div>
     
     <div class= 'container'>
     <h4>Is your pie a circle?</h4>
-
+ 
     When you run your code from that point, your chart may be a oval or unequal, to fix this type <code>ax1.axis('equal')</code>.
 </div>
 <div class= 'container'>
     <h4>Run your code</h4>
-
-
+ 
+ 
     After these steps, you should have a basic pie chart that you can use to visually represent data when ending your code with
     <code>plt.show()</code>.
-
-
-
+ 
+ 
+ 
 </div>
-
+ 
 <div class= 'container'>
     <h3>Result Ex:</h3>
-
-
+ 
+ 
     <img src="pieg.png">
     </div>
 </body>
-
+ 
 </html>
